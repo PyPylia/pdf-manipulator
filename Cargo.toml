@@ -1,0 +1,18 @@
+[package]
+name = "pdf-manipulator"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+eyre = "0.6.11"
+lopdf = "0.31.0"
+native-windows-derive = "1.0.5"
+native-windows-gui = "1.0.13"
+uuid = { version = "1.6.1", features = ["v4", "fast-rng"] }
+
+[build-dependencies]
+json = "0.12.4"
+reqwest = { version = "0.11.22", features = ["blocking"] }
+winres = "0.1.12"
